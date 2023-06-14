@@ -1,11 +1,11 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-home',
-  templateUrl: './home.component.html',
-  styleUrls: ['./home.component.less']
+  selector: 'app-ng-if',
+  templateUrl: './ng-if.component.html',
+  styleUrls: ['./ng-if.component.less']
 })
-export class HomeComponent {
+export class NgIfComponent {
 
   title: String = '我是测试字段'
   flag: Boolean = true

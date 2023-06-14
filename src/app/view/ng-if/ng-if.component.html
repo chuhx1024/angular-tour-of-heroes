@@ -1,0 +1,8 @@
+<h1 *ngIf="flag">真的</h1>
+
+<h1 *ngIf="flag;else theName">是真的</h1>
+<ng-template #theName>
+    <h1>是假的</h1>
+</ng-template>
+
+<button (click)="hidden()">显示隐藏</button>
