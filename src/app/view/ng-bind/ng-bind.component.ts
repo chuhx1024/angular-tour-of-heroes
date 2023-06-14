@@ -12,4 +12,8 @@ export class NgBindComponent {
       <p>1<p>
     </div>
   `
+  styleObj = {
+    color: 'pink',
+    fontSize: '20px'
+  }
 }

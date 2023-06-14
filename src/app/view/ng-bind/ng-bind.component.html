@@ -1,3 +1,13 @@
-<p>{{value}}</p>
-<p [innerText] = "value"></p>
-<p [innerHtml] = "value"></p>
+<div class="ng-bind-container">
+
+    <p class="bg-blue">{{value}}</p>
+    <p [innerText] = "value"></p>
+    <p [innerHtml] = "value"></p>
+    <p [ngClass] = "{font60: true}">看我样式</p>
+    <p [ngClass] = "{'font60 bg-blue': true}">看我样式</p>
+    <p [ngClass] = "['font60', 'bg-blue']">看我样式</p>
+    <p [ngClass] = "['font60', 'bg-blue']">看我样式</p>
+
+    <p [ngStyle]="{fontSize: '12px', color: 'red'}">我是行内样式</p>
+    <p [ngStyle]="styleObj">我是引用的行内样式</p>
+</div>
