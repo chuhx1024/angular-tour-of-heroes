@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./ng-switch.component.less']
 })
 export class NgSwitchComponent {
-
+  value:String = '0'
 }

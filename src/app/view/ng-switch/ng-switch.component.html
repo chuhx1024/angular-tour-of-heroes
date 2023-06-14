@@ -1,1 +1,8 @@
-<p>ng-switch works!</p>
+<button (click)="value = '0'">小明</button>
+<button (click)="value = '1'">小红</button>
+<button (click)="value = '2'">大明</button>
+<div [ngSwitch]="value">
+    <div *ngSwitchCase="'0'">显示小明</div>
+    <div *ngSwitchCase="'1'">显示小红</div>
+    <div *ngSwitchDefault>显示大明</div>
+</div>
