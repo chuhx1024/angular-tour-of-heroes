@@ -2,3 +2,29 @@
 <input type="text" [formControl] = "age">
 {{age.value}}
 <button (click)="ageAdd()">长大</button>
+<hr>
+<!-- 动态表单控件组 -->
+<form [formGroup]="loginForm">
+    <label >
+        账号:
+        <input type="text" formControlName="username">
+    </label>
+    <label >
+        密码:
+        <input type="text" formControlName="password">
+    </label>
+    {{loginForm.value.username}}
+    {{loginForm.value.password}}
+    <button (click)="subForm()">提交</button>
+</form>
+
+<h2>表单验证</h2>
+<form action="">
+    账号
+    <input required type="text" #nameInp="ngModel" [(ngModel)]="formData.username" name="username">
+    验证{{nameInp.valid}}
+    密码
+    <input type="text" #pwdInp="ngModel" [(ngModel)]="formData.password" name="password">
+    {{formData.username}}
+</form>
+<h2>自定义表单验证表单验证</h2>

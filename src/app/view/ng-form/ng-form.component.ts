@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { FormControl } from '@angular/forms'
+import { FormControl, FormGroup } from '@angular/forms'
 
 @Component({
   selector: 'app-ng-form',
@@ -7,9 +7,22 @@ import { FormControl } from '@angular/forms'
   styleUrls: ['./ng-form.component.less']
 })
 export class NgFormComponent {
-  age = new FormControl();
+  age = new FormControl(20);
+
+  loginForm = new FormGroup({
+    username: new FormControl(''),
+    password: new FormControl(''),
+  })
+
+  formData = {
+    username: '',
+    password: ''
+  }
 
   ageAdd () {
     this.age.setValue(18)
+  }
+  subForm () {
+    console.log(this.loginForm.value)
   }
 }
