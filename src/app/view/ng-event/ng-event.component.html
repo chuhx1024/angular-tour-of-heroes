@@ -1,0 +1,10 @@
+<div (click)="clickFun()">点击</div>
+<input #inputFlag type="text" (input) ="inputChange($event)" name="">
+
+<!-- 模板引用变量使用 -->
+<button (click)="getValue(inputFlag.value)">获取input的值</button>
+
+<!-- 数据双向绑定 -->
+<br/>
+<input type="text" [(ngModel)]="title">
+<p>{{title}}</p>
