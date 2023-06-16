@@ -1,0 +1,10 @@
+<form action="" [formGroup]="valiDateForm">
+    账号
+    <input required type="text" formControlName="username">
+    <p *ngIf="valiDateForm.get('username')?.errors?.['required']">请输入</p>
+    密码
+    <input type="text"  formControlName="password">
+    <p>{{valiDateForm.get('password')?.errors?.['msg']}}</p>
+    {{valiDateForm.value.username}}
+    <button (click)="subValidDataFun()">提交</button>
+</form>
