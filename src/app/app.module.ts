@@ -1,12 +1,13 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { FormsModule } from '@angular/forms'
+import { FormsModule, ReactiveFormsModule } from '@angular/forms'
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NgIfComponent } from './view/ng-if/ng-if.component';
 import { NgSwitchComponent } from './view/ng-switch/ng-switch.component';
 import { NgBindComponent } from './view/ng-bind/ng-bind.component';
 import { NgEventComponent } from './view/ng-event/ng-event.component';
+import { NgFormComponent } from './view/ng-form/ng-form.component';
 
 @NgModule({
   declarations: [
@@ -14,12 +15,14 @@ import { NgEventComponent } from './view/ng-event/ng-event.component';
     NgIfComponent,
     NgSwitchComponent,
     NgBindComponent,
-    NgEventComponent
+    NgEventComponent,
+    NgFormComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
