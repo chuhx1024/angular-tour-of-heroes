@@ -3,3 +3,13 @@
 <h2>因为是管道 可以逐层执行</h2>
 <p>{{name | uppercase | lowercase}}</p>
 <h2>自定义管道</h2>
+<p>使用脚手架指令  ng generate pipe XXX/XXX</p>
+<p>{{num }}</p>
+<p>{{num | plus }}</p>
+<p *ngFor="let item of books | sort:'price'; index as i">
+    序号:{{i}}
+    ID:{{item.id}}
+    名称:{{item.name}}
+    价格:{{item.price}}
+</p>
+---------
