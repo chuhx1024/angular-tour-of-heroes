@@ -9,6 +9,7 @@ import { NgBindComponent } from './view/ng-bind/ng-bind.component';
 import { NgEventComponent } from './view/ng-event/ng-event.component';
 import { NgFormComponent } from './view/ng-form/ng-form.component';
 import { NgCostomFormComponent } from './view/ng-costom-form/ng-costom-form.component';
+import { NgPipeComponent } from './view/ng-pipe/ng-pipe.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { NgCostomFormComponent } from './view/ng-costom-form/ng-costom-form.comp
     NgBindComponent,
     NgEventComponent,
     NgFormComponent,
-    NgCostomFormComponent
+    NgCostomFormComponent,
+    NgPipeComponent,
   ],
   imports: [
     BrowserModule,
