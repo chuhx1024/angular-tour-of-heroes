@@ -14,6 +14,9 @@ import { PlusPipe } from './pipes/plus.pipe';
 import { SortPipe } from './pipes/sort.pipe';
 import { NgFatherComponent } from './view/ng-father-son/ng-father/ng-father.component';
 import { NgSonComponent } from './view/ng-father-son/ng-son/ng-son.component';
+import { NgServiceComponent } from './view/ng-service/ng-service.component';
+
+import {ServiceService} from './service/service.service'
 
 @NgModule({
   declarations: [
@@ -29,6 +32,7 @@ import { NgSonComponent } from './view/ng-father-son/ng-son/ng-son.component';
     SortPipe,
     NgFatherComponent,
     NgSonComponent,
+    NgServiceComponent,
   ],
   imports: [
     BrowserModule,
@@ -36,7 +40,7 @@ import { NgSonComponent } from './view/ng-father-son/ng-son/ng-son.component';
     FormsModule,
     ReactiveFormsModule
   ],
-  providers: [],
+  providers: [ServiceService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
