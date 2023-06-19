@@ -12,6 +12,8 @@ import { NgCostomFormComponent } from './view/ng-costom-form/ng-costom-form.comp
 import { NgPipeComponent } from './view/ng-pipe/ng-pipe.component';
 import { PlusPipe } from './pipes/plus.pipe';
 import { SortPipe } from './pipes/sort.pipe';
+import { NgFatherComponent } from './view/ng-father-son/ng-father/ng-father.component';
+import { NgSonComponent } from './view/ng-father-son/ng-son/ng-son.component';
 
 @NgModule({
   declarations: [
@@ -25,6 +27,8 @@ import { SortPipe } from './pipes/sort.pipe';
     NgPipeComponent,
     PlusPipe,
     SortPipe,
+    NgFatherComponent,
+    NgSonComponent,
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,8 @@
+<p>ng-father works!</p>
+<button (click)="changeTitle()">父组件改变title</button>
+<div>
+    父组件的数组: <span *ngFor="let item of list">{{item}}</span>
+</div>
+<button (click)="handleSon()">父亲通过子组件方法添加</button>
+
+<app-ng-son #myChild (addList)="addListItem($event)"  [title]="title"></app-ng-son>
