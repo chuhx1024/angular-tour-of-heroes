@@ -19,6 +19,10 @@ import { NgServiceComponent } from './view/ng-service/ng-service.component';
 import {ServiceService} from './service/service.service';
 import { NgHttpComponent } from './view/ng-http/ng-http.component'
 
+import { NzButtonModule } from 'ng-zorro-antd/button';
+import { NzSpaceModule } from 'ng-zorro-antd/space'
+
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -40,7 +44,9 @@ import { NgHttpComponent } from './view/ng-http/ng-http.component'
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    NzButtonModule,
+    NzSpaceModule,
   ],
   providers: [ServiceService],
   bootstrap: [AppComponent]
