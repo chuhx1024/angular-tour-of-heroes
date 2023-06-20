@@ -5,7 +5,7 @@ import { NgSwitchComponent } from "@/app/view/ng-switch/ng-switch.component";
 
 const routes: Routes = [
   {path: 'ng-form', component: NgFormComponent},
-  {path: 'ng-switch', component: NgSwitchComponent},
+  {path: 'ng-switch/:paramsId/:name', component: NgSwitchComponent},
   {path: '**', component: NgFormComponent},
 ];
 
