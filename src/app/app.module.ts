@@ -16,7 +16,8 @@ import { NgFatherComponent } from './view/ng-father-son/ng-father/ng-father.comp
 import { NgSonComponent } from './view/ng-father-son/ng-son/ng-son.component';
 import { NgServiceComponent } from './view/ng-service/ng-service.component';
 
-import {ServiceService} from './service/service.service'
+import {ServiceService} from './service/service.service';
+import { NgHttpComponent } from './view/ng-http/ng-http.component'
 
 @NgModule({
   declarations: [
@@ -33,6 +34,7 @@ import {ServiceService} from './service/service.service'
     NgFatherComponent,
     NgSonComponent,
     NgServiceComponent,
+    NgHttpComponent,
   ],
   imports: [
     BrowserModule,

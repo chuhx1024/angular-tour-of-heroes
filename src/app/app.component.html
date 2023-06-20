@@ -1,6 +1,10 @@
 <div>
+    <a [routerLink]="['/ng-http']" >routerlink去Http</a>
+    <br>
     <button (click)="goToForm()">js去ng-form</button>
+    <br>
     <a [routerLink]="['/ng-switch', '666', '小明']" [queryParams]="{id: 123}" >routerlink去ng-switch</a>
+    <br>
 </div>
 <h1>路由坑位start---------</h1>
 <router-outlet></router-outlet>
