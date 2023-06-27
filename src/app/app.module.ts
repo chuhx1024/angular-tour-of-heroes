@@ -22,6 +22,8 @@ import { NgHttpComponent } from './view/ng-http/ng-http.component'
 import { NzButtonModule } from 'ng-zorro-antd/button';
 import { NzSpaceModule } from 'ng-zorro-antd/space'
 
+import { HttpClientModule } from "@angular/common/http";
+
 
 @NgModule({
   declarations: [
@@ -47,6 +49,7 @@ import { NzSpaceModule } from 'ng-zorro-antd/space'
     ReactiveFormsModule,
     NzButtonModule,
     NzSpaceModule,
+    HttpClientModule,
   ],
   providers: [ServiceService],
   bootstrap: [AppComponent]

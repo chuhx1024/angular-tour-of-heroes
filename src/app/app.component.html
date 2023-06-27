@@ -1,8 +1,8 @@
 <div id ="main-app">
     <nz-space nzSize="large">
+        <button nz-button nzType="default" [routerLink]="['/ng-http']">ng-http</button>
+        <button nz-button nzType="primary" (click)="goToForm()">js去ng-form</button>
         <a nz-button nzType="dashed" [routerLink]="['/ng-switch', '666', '小明']" [queryParams]="{id: 123}" >routerlink去ng-switch</a>
-        <button nz-button nzType="primary" [routerLink]="['/ng-http']">Primary</button>
-        <button nz-button nzType="default" (click)="goToForm()">js去ng-form</button>
     </nz-space>
     <h1>路由坑位start---------</h1>
     <router-outlet></router-outlet>
