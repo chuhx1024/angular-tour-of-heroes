@@ -21,8 +21,11 @@ import { NgHttpComponent } from './view/ng-http/ng-http.component'
 
 import { NzButtonModule } from 'ng-zorro-antd/button';
 import { NzSpaceModule } from 'ng-zorro-antd/space'
+import { NzDividerModule } from 'ng-zorro-antd/divider';
+import { NzDescriptionsModule } from 'ng-zorro-antd/descriptions';
 
 import { HttpClientModule } from "@angular/common/http";
+import { NgForComponent } from './view/ng-for/ng-for.component';
 
 
 @NgModule({
@@ -41,6 +44,7 @@ import { HttpClientModule } from "@angular/common/http";
     NgSonComponent,
     NgServiceComponent,
     NgHttpComponent,
+    NgForComponent,
   ],
   imports: [
     BrowserModule,
@@ -50,6 +54,8 @@ import { HttpClientModule } from "@angular/common/http";
     NzButtonModule,
     NzSpaceModule,
     HttpClientModule,
+    NzDividerModule,
+    NzDescriptionsModule,
   ],
   providers: [ServiceService],
   bootstrap: [AppComponent]

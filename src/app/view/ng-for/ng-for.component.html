@@ -1,0 +1,6 @@
+<p *ngFor="let item of books | sort:'price'; index as i">
+    序号:{{i}}
+    ID:{{item.id}}
+    名称:{{item.name}}
+    价格:{{item.price}}
+</p>

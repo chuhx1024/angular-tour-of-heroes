@@ -1,28 +1,36 @@
 <div id ="main-app">
-    <nz-space nzSize="large">
-        <button nz-button nzType="default" [routerLink]="['/ng-http']">ng-http</button>
-        <button nz-button nzType="primary" (click)="goToForm()">js去ng-form</button>
-        <a nz-button nzType="dashed" [routerLink]="['/ng-switch', '666', '小明']" [queryParams]="{id: 123}" >routerlink去ng-switch</a>
-    </nz-space>
-    <h1>路由坑位start---------</h1>
+    <div>
+        <nz-space nzSize="large">
+            <button nz-button nzType="default" [routerLink]="['/ng-http']">ng-http</button>
+            <nz-divider nzType="vertical"></nz-divider>
+            <button nz-button nzType="primary" (click)="goToForm()">js去ng-form</button>
+            <nz-divider nzType="vertical"></nz-divider>
+            <a nz-button nzType="dashed" [routerLink]="['/ng-switch', '666', '小明']" [queryParams]="{id: 123}" >routerlink去ng-switch</a>
+            <nz-divider nzType="vertical"></nz-divider>
+            <button nz-button nzType="primary" [routerLink]="['/ng-for']">ng-for</button>
+            <nz-divider nzType="vertical"></nz-divider>
+            <button nz-button nzType="primary" [routerLink]="['/ng-if']">ng-if</button>
+        </nz-space>
+    </div>
+    <div style="padding-top: 40px;">
+        <nz-descriptions nzTitle="路由信息">
+            <nz-descriptions-item nzTitle="当前路由URL">{{currentRoute}}</nz-descriptions-item>
+        </nz-descriptions>
+    </div>
+    <h1 >路由start---------</h1>
     <router-outlet></router-outlet>
-    <h1>路由坑位end-----------</h1>
+    <h1>路由end-----------</h1>
+    <div style="height: 500px;"></div>
     <h1>服务 service</h1>
     <app-ng-service></app-ng-service>
     <h1>父子组件通信</h1>
     <app-ng-father></app-ng-father>
     <h1>ng-pipe</h1>
     <app-ng-pipe/>
-    <h1>ng-if</h1>
-    <app-ng-if/>
-    <h1>ng-switch</h1>
-    <app-ng-switch></app-ng-switch>
     <h1>ng-bind</h1>
     <app-ng-bind></app-ng-bind>
     <h1>事件绑定&双向数据绑定</h1>
     <app-ng-event></app-ng-event>
-    <h1>表单</h1>
-    <app-ng-form></app-ng-form>
     <h1>自定义表单验证</h1>
     <app-ng-costom-form></app-ng-costom-form>
 </div>
