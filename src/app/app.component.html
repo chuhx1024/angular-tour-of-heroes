@@ -1,6 +1,8 @@
 <div id ="main-app">
     <div>
         <nz-space nzSize="large">
+            <button nz-button nzType="default" [routerLink]="['/ng-dom']">ng-dom 获取原生DOM</button>
+            <nz-divider nzType="vertical"></nz-divider>
             <button nz-button nzType="default" [routerLink]="['/ng-http']">ng-http</button>
             <nz-divider nzType="vertical"></nz-divider>
             <button nz-button nzType="primary" (click)="goToForm()">js去ng-form</button>
