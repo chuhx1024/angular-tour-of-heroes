@@ -1,9 +1,10 @@
-<p>ng-form works!</p>
+<h2>formControl</h2>
 <input type="text" [formControl] = "age">
 {{age.value}}
 <button (click)="ageAdd()">长大</button>
 <hr>
 <!-- 动态表单控件组 -->
+<h2>formGroup</h2>
 <form [formGroup]="loginForm">
     <label >
         账号:
@@ -18,12 +19,33 @@
     <button (click)="subForm()">提交</button>
 </form>
 
-<h2>表单验证</h2>
+<hr>
+
+<h2>表单验证 & 双向数据绑定</h2>
 <form action="">
     账号
-    <input required type="text" #nameInp="ngModel" [(ngModel)]="formData.username" name="username">
-    验证{{nameInp.valid}}
+    <input required type="text" #nameInpaaa="ngModel" [(ngModel)]="formData.username" name="username">
+    验证{{nameInpaaa.valid}}
     密码
     <input type="text" #pwdInp="ngModel" [(ngModel)]="formData.password" name="password">
     {{formData.username}}
+</form>
+<hr>
+<h2>antd-angular 表单使用</h2>
+<form nz-form [nzLayout]="'inline'" [formGroup]="validateForm" (ngSubmit)="submitForm()">
+    <nz-form-item>
+        <nz-form-control nzErrorTip="Please input your username!">
+            <input formControlName="userName" nz-input placeholder="Username" />
+        </nz-form-control>
+    </nz-form-item>
+    <nz-form-item>
+        <nz-form-control nzErrorTip="Please input your Password!">
+            <input formControlName="password" nz-input type="password" placeholder="Password" />
+        </nz-form-control>
+    </nz-form-item>
+    <nz-form-item>
+        <nz-form-control>
+        <button nz-button nzType="primary" [disabled]="!validateForm.valid">Log in</button>
+        </nz-form-control>
+    </nz-form-item>
 </form>
